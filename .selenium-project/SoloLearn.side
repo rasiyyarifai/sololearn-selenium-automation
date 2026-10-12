@@ -1,0 +1,978 @@
+{
+  "id": "44377ab9-5255-4072-aab7-b40d77e40af4",
+  "version": "2.0",
+  "name": "SoloLearn",
+  "url": "https://www.sololearn.com/",
+  "tests": [{
+    "id": "fb81dbaa-5d3b-44f4-a153-279ecd3da4fb",
+    "name": "INVALID login",
+    "commands": [{
+      "id": "d12eecf9-f532-403e-ba36-42d6fc60adab",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sololearn.com/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a55a7ced-45c7-4912-85e0-1f06eff289b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1063x854",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fce50cb-c830-4b04-ab43-731d407ba84b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-action-btn:nth-child(1)",
+      "targets": [
+        ["css=.sl-action-btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc57666a-db49-4555-8beb-ac60e2ab97ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e709a52d-1758-4d5d-9c2a-a8f831a1982a",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "invalidUSR@gmail.com"
+    }, {
+      "id": "4beeb600-9cb3-4744-aee9-284f7132c5a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1db3f942-c017-4e2a-9a48-3b705f899557",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "123invalid"
+    }, {
+      "id": "37702509-baec-45b4-b3b9-6d773c6fb185",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-p-form-field__password-toggle",
+      "targets": [
+        ["css=.sl-p-form-field__password-toggle", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Show')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b74eb02-515b-4605-85b9-7752219fca4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e426c1d1-e101-40f1-82e5-12d2c4660c2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-user-login__content",
+      "targets": [
+        ["css=.sl-user-login__content", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08d65dec-00e2-48ae-8329-cecf4fd25f84",
+      "comment": "",
+      "command": "executeScript",
+      "target": "alert(\"invalid login detected\")",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1eb07bf6-3d4f-42e1-989b-f0556bef0618",
+    "name": "Courses",
+    "commands": [{
+      "id": "28e9e568-e263-4130-86af-fbb23193143d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sololearn.com/en/profile/28101777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1f61a23-d40e-4ed7-af10-1d4bf387883c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1037x762",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5acaccb9-43b4-4d33-827f-7498c67ef4ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-navbar__content-list__wrapper__item__btn",
+      "targets": [
+        ["css=.sl-navbar__content-list__wrapper__item__btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div/li/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0faff89d-a4a1-4540-a6f0-29c8ce76e377",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View full catalog",
+      "targets": [
+        ["linkText=View full catalog", "linkText"],
+        ["css=.sl-courses-catalog-dropdown__footer__see-all", "css:finder"],
+        ["xpath=//a[contains(text(),'View full catalog')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div/li/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/en/learn')])[6]", "xpath:href"],
+        ["xpath=//li/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View full catalog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc627b86-4e42-4ffe-bc0e-d4825b368f50",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sl-horizontal__item:nth-child(4) .le-course-item-v2__title",
+      "targets": [
+        ["css=.sl-horizontal__item:nth-child(4) .le-course-item-v2__title", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/main/main/section/div/div[2]/div[4]/a/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[4]/a/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Introduction to HTML')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6872b071-5840-4be6-8b59-6e4c5f54b281",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.sl-horizontal__item:nth-child(4) .le-course-item-v2__title",
+      "targets": [
+        ["css=.sl-horizontal__item:nth-child(4) .le-course-item-v2__title", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/main/main/section/div/div[2]/div[4]/a/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[4]/a/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Introduction to HTML')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79cc92e3-67bc-494f-9df4-781af0852e98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-horizontal__item:nth-child(1) > .le-course-item-v2",
+      "targets": [
+        ["css=.sl-horizontal__item:nth-child(1) > .le-course-item-v2", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/main/main/section/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/learn/courses/coding-foundations')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c4b7217-db92-43c5-a7a8-6b31c7d96b3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-navbar__content-list__wrapper__item__btn",
+      "targets": [
+        ["css=.sl-navbar__content-list__wrapper__item__btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div/li/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9903747-1397-4578-8fb2-d8a573529cec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Web Development",
+      "targets": [
+        ["linkText=Web Development", "linkText"],
+        ["css=#Web\\ Development > a", "css:finder"],
+        ["xpath=//li[@id='Web Development']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/learn/courses/web-development')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Web Development')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1806ac4d-ea84-4ad2-b41c-0aa2a40712b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-navbar__content-list__wrapper__item__btn",
+      "targets": [
+        ["css=.sl-navbar__content-list__wrapper__item__btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div/li/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76580fb4-b837-4093-8ce4-cd41020e20b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Python\\ Developer span",
+      "targets": [
+        ["css=#Python\\ Developer span", "css:finder"],
+        ["xpath=//li[@id='Python Developer']/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Python Developer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21a25a0a-350a-437b-bdb9-8bb3b8f2f4ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-navbar__content-list__wrapper__thick > .sol-icon",
+      "targets": [
+        ["css=.sl-navbar__content-list__wrapper__thick > .sol-icon", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "06cd7ccf-52e9-468e-a887-15dcb56ada7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Coding\\ for\\ Data span",
+      "targets": [
+        ["css=#Coding\\ for\\ Data span", "css:finder"],
+        ["xpath=//li[@id='Coding for Data']/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Coding for Data')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ad47ff1b-bf19-451e-ad9e-da7b60e64b61",
+    "name": "navigation",
+    "commands": [{
+      "id": "b68c16f1-c990-4159-8db0-688f63c0d48c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sololearn.com/en/profile/28101777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07063732-8536-4269-bc37-cfdd9ef4af52",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1460x762",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40790029-a100-461e-9880-2a7064b0bac7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-navbar__content-list__wrapper__item__btn",
+      "targets": [
+        ["css=.sl-navbar__content-list__wrapper__item__btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div/li/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd08089e-8e3b-4fe6-a1cf-8e961af45461",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Leaderboard",
+      "targets": [
+        ["linkText=Leaderboard", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Leaderboard')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/leaderboard-league')]", "xpath:href"],
+        ["xpath=//div[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Leaderboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc259c31-7017-4318-a44f-6a21e6d343c9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Leaderboard",
+      "targets": [
+        ["linkText=Leaderboard", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Leaderboard')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/leaderboard-league')]", "xpath:href"],
+        ["xpath=//div[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Leaderboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d8b0cbd-ed15-4051-aa49-62cb84f8b9b2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Leaderboard",
+      "targets": [
+        ["linkText=Leaderboard", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Leaderboard')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/leaderboard-league')]", "xpath:href"],
+        ["xpath=//div[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Leaderboard')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "291c3463-7ee9-4fdb-a3df-ed70e071d706",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Code Bits",
+      "targets": [
+        ["linkText=Code Bits", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Code Bits')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[3]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/codes')]", "xpath:href"],
+        ["xpath=//div[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Code Bits')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d2677b7-8c7b-4c8f-85fd-7e290fc63aaf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discuss",
+      "targets": [
+        ["linkText=Discuss", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Discuss')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[4]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/discuss')]", "xpath:href"],
+        ["xpath=//div[4]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Discuss')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84e7b69f-6817-43cb-a9f4-055b3d773bcf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Discuss",
+      "targets": [
+        ["linkText=Discuss", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Discuss')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[4]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/discuss')]", "xpath:href"],
+        ["xpath=//div[4]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Discuss')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc4e301e-905f-49d6-b84f-ffc69f34d2e4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Discuss",
+      "targets": [
+        ["linkText=Discuss", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Discuss')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[4]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/discuss')]", "xpath:href"],
+        ["xpath=//div[4]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Discuss')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2abd13a5-2434-4e16-8323-53e9a68fe88c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Blog",
+      "targets": [
+        ["linkText=Blog", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(5) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Blog')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[5]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sololearn.com/blog')]", "xpath:href"],
+        ["xpath=//div[5]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Blog')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28cff1f7-9bae-4f79-87d4-751aac6f638f",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-avatar",
+      "targets": [
+        ["id=user-avatar", "id"],
+        ["css=#user-avatar", "css:finder"],
+        ["xpath=//img[@alt='user avatar']", "xpath:img"],
+        ["xpath=//img[@id='user-avatar']", "xpath:attributes"],
+        ["xpath=//div[@id='user-profile']/img", "xpath:idRelative"],
+        ["xpath=//div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfac4210-cb79-42be-b926-8a0bde8d4b05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-modal__close__icon > svg",
+      "targets": [
+        ["css=.sl-modal__close__icon > svg", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d48ef67a-2524-4ead-a39f-4b7e53e7983f",
+    "name": "search",
+    "commands": [{
+      "id": "73cf827e-0f8a-4706-8496-2abef6ed9eae",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sololearn.com/en/profile/28101777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d76bfcd1-3e45-4f22-82b1-e9be2397b281",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1212x779",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f064b9a-f4de-46e8-9006-9ae80462f3ec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Discuss",
+      "targets": [
+        ["linkText=Discuss", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Discuss')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[4]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/discuss')]", "xpath:href"],
+        ["xpath=//div[4]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Discuss')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fe27747-3d42-4ab5-95d1-ef680b2d299f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Discuss",
+      "targets": [
+        ["linkText=Discuss", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Discuss')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[4]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/discuss')]", "xpath:href"],
+        ["xpath=//div[4]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Discuss')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0132c98-82da-424b-bb55-37866a6691c4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Discuss",
+      "targets": [
+        ["linkText=Discuss", "linkText"],
+        ["css=.sl-navbar__content-list__wrapper:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Discuss')]", "xpath:link"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div[4]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/discuss')]", "xpath:href"],
+        ["xpath=//div[4]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Discuss')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0264586-8892-4ec1-9859-4ada343733cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-input-m .sol-input_input",
+      "targets": [
+        ["css=.sol-input-m .sol-input_input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/main/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11602696-c728-4b60-8cad-3e9ec07a04af",
+      "comment": "",
+      "command": "type",
+      "target": "css=.sol-input-m .sol-input_input",
+      "targets": [
+        ["css=.sol-input-m .sol-input_input", "css:finder"],
+        ["xpath=//input[@value='python basics']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/main/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "python basics"
+    }, {
+      "id": "a66e4c86-b65b-4157-b5ca-fe3b0ea5e3f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.discuss-questions-search__search",
+      "targets": [
+        ["css=.discuss-questions-search__search", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/main/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b04092c-6be1-44dc-a996-aaddaf0c85f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=What are the basics to be known before python",
+      "targets": [
+        ["linkText=What are the basics to be known before python", "linkText"],
+        ["css=.discuss-questions-list__item:nth-child(9) .discuss-questions-list__item__title", "css:finder"],
+        ["xpath=//a[contains(text(),'What are the basics to be known before python')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div[2]/main/div/div/div[2]/div[9]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/Discuss/1392867/what-are-the-basics-to-be-known-before-python')]", "xpath:href"],
+        ["xpath=//div[9]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'What are the basics to be known before python')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12960bbe-2910-4d4f-93b1-577de77330e1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d05d1344-a5fd-4288-85c5-185d5152a74d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,6926.66650390625)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ecd7375b-a4d6-49bc-b708-c4f6553e9b16",
+    "name": "Quizz",
+    "commands": [{
+      "id": "5798ea5a-2af6-471c-9b2d-64294e7c64b0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sololearn.com/en/profile/28101777",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "246f88b7-80f3-40e9-8d61-ba93a634bcdd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "922f2abe-7d58-461a-a61b-b4f32440e1b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-navbar__content-list__wrapper__item__btn",
+      "targets": [
+        ["css=.sl-navbar__content-list__wrapper__item__btn", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/ul/div/li/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Courses')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dc0d906-4cd5-4e6f-b18b-9b5535ef5360",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Python Developer",
+      "targets": [
+        ["linkText=Python Developer", "linkText"],
+        ["css=#Python\\ Developer > a", "css:finder"],
+        ["xpath=//li[@id='Python Developer']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/learn/courses/python-developer')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Python Developer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f65bcff3-5738-414c-bfdb-04a83a3ec033",
+      "comment": "",
+      "command": "click",
+      "target": "css=.le-course-widget__action-button",
+      "targets": [
+        ["css=.le-course-widget__action-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[2]/main/div/div/div/div[2]/div[2]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Learn')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd7a17b4-77c1-4c00-b3a2-159be05e9c04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "683f9b2a-a237-49b8-855c-f334d042c59c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-dnd-options-v2__item:nth-child(1) > span",
+      "targets": [
+        ["css=.sl-dnd-options-v2__item:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='lessonPageOptionsPortal']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b796479a-0f02-47e5-a3f6-2e862388853a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dfab559-eedd-4ba0-ac9d-1ade7d2bf153",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0dcb16a-2017-4912-aa03-33a2625e3d3e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1a0a1e3-0aa0-4bf7-92d2-f7ee15485ba5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b7b4957-48e1-4300-b36c-33e4bd6d5a18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-dnd-options-v2__item:nth-child(2)",
+      "targets": [
+        ["css=.sl-dnd-options-v2__item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='lessonPageOptionsPortal']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//footer/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5df92207-aa34-4a30-8c70-ece796df32c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1473c099-ffcc-49e2-bbf3-1e1a4f3e0294",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "124fadd9-b135-4fb9-aa79-4ed57b488281",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-dnd-options-v2__item:nth-child(1) > span",
+      "targets": [
+        ["css=.sl-dnd-options-v2__item:nth-child(1) > span", "css:finder"],
+        ["xpath=//div[@id='lessonPageOptionsPortal']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,')')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f7b1e39-a3cd-4365-872d-9055109c3097",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-dnd-options-v2__item:nth-child(2)",
+      "targets": [
+        ["css=.sl-dnd-options-v2__item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='lessonPageOptionsPortal']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//footer/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8fc5dbf-dbca-4654-9d68-b926f83f970b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c854e15-4319-4fc8-b676-78703099aa3b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4804e4b-3345-4f29-b1f3-3af1a297982b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e7e4019-60c3-4dab-8088-f466d384ce4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.le-quiz-feedback",
+      "targets": [
+        ["css=.le-quiz-feedback", "css:finder"],
+        ["xpath=//div[@id='main']/div/main/div/div/div/footer/div", "xpath:idRelative"],
+        ["xpath=//footer/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ce0fd492-044e-4f50-851e-848d6cdd7d7a",
+    "name": "VALID login",
+    "commands": [{
+      "id": "0318d9c6-fbb6-4c51-b494-2cc9b61f5e64",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sololearn.com/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81aea718-c7a9-4b1f-a4ee-058d5b4db463",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1177x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3522aa90-d355-4acf-b97f-c1ced9d75c5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-action-btn:nth-child(1)",
+      "targets": [
+        ["css=.sl-action-btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/nav/div/div[3]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c28a127e-1b64-4c34-af04-8422149dba5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfffaccb-2a02-4448-966d-fdbe91e76d23",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user@example.com"
+    }, {
+      "id": "5d2ecc29-d09d-47ac-93d1-190a0c3092de",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb12ac41-6cb4-4743-837b-22b1d420deb8",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "testPW123"
+    }, {
+      "id": "83386a75-9da7-4621-ba2a-fb67ab7dd533",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-p-form-field__password-toggle",
+      "targets": [
+        ["css=.sl-p-form-field__password-toggle", "css:finder"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Show')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "922c6633-d2a5-475a-bf5a-181c98a651e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sol-button",
+      "targets": [
+        ["css=.sol-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div/div/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17d6abe0-8315-492e-b36e-906f297e66d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sl-p-details__name--text",
+      "targets": [
+        ["css=.sl-p-details__name--text", "css:finder"],
+        ["xpath=//div[@id='main']/div[2]/div/div/div/div[2]/div/div/div[2]/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'testUSER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f983dae-58dd-4806-889d-55b750f0a14c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "testUSER",
+      "targets": [],
+      "value": "testUSER"
+    }]
+  }],
+  "suites": [{
+    "id": "1ed6d1e4-f26c-4209-b856-b2449b2a0ebb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.sololearn.com/"],
+  "plugins": []
+}
